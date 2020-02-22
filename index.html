@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>image slider</title>
+</head>
+
+<body>
+
+    <div class="slider-container">
+        <input type="radio" name="student" id="abdo">
+        <input type="radio" name="student" id="bassem">
+        <input type="radio" name="student" id="elsayed">
+        <input type="radio" name="student" id="salah">
+        <input type="radio" name="student" id="eltelbany">
+        <input type="radio" name="student" id="wagdy">
+        <input type="radio" name="student" id="cesar">
+
+        <div class="slide-element abdo-slide">
+            <img src="ab.jpg" alt="abdo">
+            <p>abdelrahman seada</p>
+        </div>
+        <div class="slide-element bassem-slide">
+            <img src="ba.jpg" alt="bassem ahmed">
+            <p>bassem ahmed</p>
+        </div>
+        <div class="slide-element elsayed-slide">
+            <img src="el.jpg" alt="elsayed sherif">
+            <p>&nbsp&nbspelsayed &nbsp&nbsp sherif</p>
+        </div>
+        <div class="slide-element salah-slide">
+            <img src="sa.jpg" alt="mohamed salah">
+            <p>mohamed salah</p>
+        </div>
+        <div class="slide-element eltelbany-slide">
+            <img src="te.jpg" alt="mohamed eltelbany">
+            <p>mohamed eltelbany</p>
+        </div>
+        <div class="slide-element wagdy-slide">
+            <img src="wa.jpg" alt="wagdy mohamed">
+            <p>wagdy mohamed</p>
+        </div>
+        <div class="slide-element cesar-slide">
+            <img src="az.jpg" alt="ahmed abdelazem">
+            <p>ahmed abdelazem</p>
+        </div>
+        <div class="slider-tabs">
+            <label data-index='1' for="abdo"></label>
+            <label data-index='2' for="bassem"></label>
+            <label data-index='3' for="elsayed"></label>
+            <label data-index='4' for="salah"></label>
+            <label data-index='5' for="eltelbany"></label>
+            <label data-index='6' for="wagdy"></label>
+            <label data-index='7' for="cesar"></label></div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+        var i = 1;
+        $('label').click(function() {
+            $(this).css('background', "#b71540").siblings().css('background', '#fff');
+            var index = parseInt($(this).attr('data-index'));
+            i = index + 1;
+
+        })
+
+        setInterval(function() {
+            var lbl = `[data-index=${i}]`;
+            $(lbl).click()
+
+            if (i > 7)
+                i = 1;
+        }, 2000)
+    </script>
+</body>
+
+</html>

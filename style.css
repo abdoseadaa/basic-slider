@@ -1,0 +1,18 @@
+@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 400;font-display: swap;src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body,html{background: #2d3436;}
+.slider-container{height: auto;background: #0a3d62;margin: auto;text-align: center;padding:20px 0}
+.slide-element{display: inline-block;text-align: center;transform: scale(.8);transition: .5s;height: auto;border-radius: 10px;padding: 10px;width: 120px;}
+.slide-element img{width: 80px;height: 80px;border-radius: 50%;box-shadow: 0 0 10px #636e72;border : 2px solid #999;}
+.slide-element p {margin-top: 10px;color : white;background: #00b894;padding: 5px;font-size: 12px;border-radius: 10px;text-transform: capitalize;font-family: 'Montserrat' ;}
+input[type = 'radio']{display: none;}
+.slider-tabs{padding:30px 0;text-align:center;}
+label{width: 30px;height: 10px;background: #fff;border-radius: 10px;display: inline-block;cursor: pointer;}
+.active{transform: scale(1);cursor: pointer;background: #636e72;}
+#abdo:checked ~ .abdo-slide {transform: scale(1);cursor: pointer;background: #636e72;}
+#bassem:checked ~ .bassem-slide{transform: scale(1);cursor: pointer;background: #636e72;}
+#elsayed:checked ~ .elsayed-slide{transform: scale(1);cursor: pointer;background: #636e72;}
+#salah:checked ~ .salah-slide{transform: scale(1);cursor: pointer;background: #636e72;}
+#eltelbany:checked ~ .eltelbany-slide{transform: scale(1);cursor: pointer;background: #636e72;}
+#wagdy:checked ~ .wagdy-slide{transform: scale(1);cursor: pointer;background: #636e72;}
+#cesar:checked ~ .cesar-slide{transform: scale(1);cursor: pointer;background: #636e72;}
